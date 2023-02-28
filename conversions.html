@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title>
+       CONVERSIONS
+    </title>
+ 
+<body>
+
+<h2>Chandra Priya Kavalapati shows currency conversions</h2>
+
+<form>
+    <label for="form1_age">Enter base amount</label>
+    <input type ="number" id="base" name="form1_age" min=10 max=50 step=2 value=50> <br>
+
+    <label for="form1_nick">Enter the conversion rate</label>
+    <input type ="number" id="CONVO" name="form1_nick" autofocus value="35"> <br>
+
+    <input type="button" onclick="convert()" value="Show conversions">
+</form>
+
+
+<p id="result">Displaying the result</p>
+
+<script> 
+var toShow='';
+var outstr='';
+function convert(){
+    toShow='';
+var base=document.getElementById("base").value;
+var conv=document.getElementById("CONVO").value;
+var base1=base;
+for (let i = 1; i <=5; i++) {
+    console.log(2**i);
+    
+    toShow=toShow+base+' is '+Math.round(base*conv * 100) / 100+'; ';
+    base=base1*(2**i);
+    
+}
+document.getElementById("result").innerHTML='Conversions are: '+toShow;
+    
+}
+
+</script>
+
+</body>
+</html> 
