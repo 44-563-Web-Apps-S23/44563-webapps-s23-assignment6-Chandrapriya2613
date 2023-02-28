@@ -20,9 +20,13 @@
 
 
 <p id="result">Good Count :0;<br>Opps Count :0; </p>
+<div class="container">
+    <img src="Lflower.jpg" id="plantpic" width="100" height="100" onclick="selectImage()">
+  
+  </div>
 
 <script> 
-var good=0;oops=0;
+var good=0;oops=0, useImage=1;
 function checkPainter(){
     if(document.getElementById("PainterName").value==document.getElementById("GuessName").value){
     alert("You got it right");
@@ -34,6 +38,21 @@ function checkPainter(){
     document.getElementById("result").innerHTML='Good Count :'+good+';<br>Opps Count :'+oops; 
     
 }
+
+function selectImage(){
+  
+  switch(useImage){
+   case 1:
+     useImage=2;document.getElementById("plantpic").src="Lflower.jpg";break;
+   case 2:
+     useImage=3;document.getElementById("plantpic").src="peonies-hd.jpg";break;
+   case 3:
+     useImage=1;document.getElementById("plantpic").src="viburnum.jpg";break;
+ 
+ 
+  }
+ 
+ }
 </script>
 
 </body>
