@@ -24,7 +24,6 @@
     <img src="Lflower.jpg" id="plantpic" width="100" height="100" onclick="selectImage()">
   
   </div>
-
 <script> 
 var good=0;oops=0, useImage=1;
 function checkPainter(){
@@ -36,9 +35,7 @@ function checkPainter(){
         oops=oops+1;
     }
     document.getElementById("result").innerHTML='Good Count :'+good+';<br>Opps Count :'+oops; 
-    
 }
-
 function selectImage(){
   
   switch(useImage){
@@ -48,10 +45,7 @@ function selectImage(){
      useImage=3;document.getElementById("plantpic").src="peonies-hd.jpg";break;
    case 3:
      useImage=1;document.getElementById("plantpic").src="viburnum.jpg";break;
- 
- 
   }
- 
  }
 </script>
 
