@@ -38,10 +38,7 @@
       </form>
       </div>
       <p id="resultnewvalue">This text will be replaced </p>
-
-
-
-
+      
 <script> 
  my_candy_box={};
        function selectBox(){
@@ -55,7 +52,7 @@
     function updateBox(){
        
        my_candy_box["size"]=document.getElementById("size").value;
-       my_candy_box.["price"]=document.getElementById("price").value;
+       my_candy_box["price"]=document.getElementById("price").value;
        
        document.getElementById("resultnewvalue").innerHTML=JSON.stringify(my_candy_box);
        
