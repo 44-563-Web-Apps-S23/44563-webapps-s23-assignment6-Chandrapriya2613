@@ -22,8 +22,7 @@
 <p id="result">Good Count :0;<br>Opps Count :0; </p>
 <div class="container">
     <img src="Lflower.jpg" id="plantpic" width="100" height="100" onclick="selectImage()">
-  
-  </div>
+</div>
 <script> 
 var good=0;oops=0, useImage=1,counter=0;
 function checkPainter(){
@@ -39,12 +38,10 @@ function checkPainter(){
     if(counter>10){
       document.getElementById("result").innerHTML='Sorry, ran out of guesses.';
       document.getElementById('togglee').style.visibility = 'hidden';
-
-    }
+ }
 }
 function selectImage(){
-  
-  switch(useImage){
+ switch(useImage){
    case 1:
      useImage=2;document.getElementById("plantpic").src="Lflower.jpg";break;
    case 2:
